@@ -3,8 +3,10 @@ package com.bz.employeewage;
 public class EmployeeWage {
 	
 	int wagePerHour = 20;
+	int partTimeHours = 4;
 	int dailyHour = 8;
 	int dailyWage;
+	int partTimeWage;
 
 
 	public void employeeAttdence() {
@@ -30,6 +32,12 @@ public class EmployeeWage {
 		dailyWage = wagePerHour * dailyHour;
 		System.out.println("Employee Daily wage = " + dailyWage);
 	}
+	
+public void employeePartTimeWage() {
+		
+	    partTimeWage = wagePerHour * partTimeHours;
+	    System.out.println("Employee Part Time Wage :"+ partTimeWage);
+	}
 
 	public static void main(String[] args) {
 		
@@ -38,6 +46,8 @@ public class EmployeeWage {
 		object.employeeAttdence();
 		
 		object.dailyWage();
+		
+		object.employeePartTimeWage();
 
 	}
 
